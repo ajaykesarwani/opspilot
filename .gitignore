@@ -1,0 +1,87 @@
+# ─────────────────────────────────────────────
+# Secrets and local environment configuration
+# ─────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ─────────────────────────────────────────────
+# Python
+# ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# ─────────────────────────────────────────────
+# Python / uv local files
+# ─────────────────────────────────────────────
+.uv/
+
+# ─────────────────────────────────────────────
+# Runtime data, databases, and vector stores
+# ─────────────────────────────────────────────
+*.sqlite
+*.sqlite3
+*.db
+postgres-data/
+kafka-data/
+chroma/
+chroma-data/
+data/chroma/
+data/vector_store/
+data/runtime/
+data/local/
+data/uploads/
+
+# ─────────────────────────────────────────────
+# MLflow and generated evaluation output
+# ─────────────────────────────────────────────
+mlruns/
+mlartifacts/
+mlruns.db
+data/knowledge_base/eval_report.md
+data/knowledge_base/eval_results*.json
+data/knowledge_base/eval_results*.csv
+
+# ─────────────────────────────────────────────
+# Logs and observability runtime data
+# ─────────────────────────────────────────────
+*.log
+logs/
+jaeger-data/
+prometheus-data/
+
+# ─────────────────────────────────────────────
+# Node / frontend
+# ─────────────────────────────────────────────
+node_modules/
+apps/frontend/node_modules/
+.next/
+apps/frontend/.next/
+apps/frontend/dist/
+apps/frontend/.vite/
+
+# ─────────────────────────────────────────────
+# Docker local override files
+# ─────────────────────────────────────────────
+docker-compose.override.yml
+compose.override.yaml
+
+# ─────────────────────────────────────────────
+# Operating system / IDE
+# ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

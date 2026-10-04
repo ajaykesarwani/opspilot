@@ -1,0 +1,32 @@
+[project]
+name = "opspilot-api"
+version = "0.2.0"
+description = "OpsPilot FastAPI gateway"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic-settings>=2.4",
+    "sqlalchemy>=2.0.30",
+    "psycopg[binary]>=3.2",
+    "alembic>=1.13",
+    "opspilot-contracts",
+    "opspilot-common",
+    "opspilot-persistence",
+    "opspilot-messaging",
+    "opspilot-rag",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["opspilot_api"]
+
+[tool.uv.sources]
+opspilot-contracts = { workspace = true }
+opspilot-common = { workspace = true }
+opspilot-persistence = { workspace = true }
+opspilot-messaging = { workspace = true }
+opspilot-rag = { workspace = true }

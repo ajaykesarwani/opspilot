@@ -1,0 +1,7 @@
+{
+    "recall_at_k_rate": 1.0,
+    "abstention_correctness_rate": 0.4,
+    "structured_output_validity_rate": 1.0,
+    "workflow_completion_rate": 1.0,
+    "average_latency_ms": 29.65109348297119
+}
