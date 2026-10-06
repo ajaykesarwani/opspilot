@@ -1,0 +1,10 @@
+{
+  "recall_at_k": 0.8462,
+  "abstention_recall": 0.8571,
+  "false_abstention_rate": 0.1538,
+  "abstention_accuracy": 0.85,
+  "structured_output_validity": 1.0,
+  "workflow_completion_rate": 1.0,
+  "p50_latency_ms": 3.4904,
+  "max_latency_ms": 6.4946
+}
